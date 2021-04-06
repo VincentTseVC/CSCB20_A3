@@ -7,6 +7,7 @@ from flask import Flask, render_template, request, redirect, session, g
 DATABASE = './assignment3.db'
 
 a = 5
+b = 8
 
 # open and connect to database, return a db (connection)
 def get_db():
