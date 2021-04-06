@@ -13,8 +13,12 @@ d = 5
 c = 6
 e = 666666
 
+g = "ggagag"
+
 f = 7777
 f2 = 888
+
+
 # open and connect to database, return a db (connection)
 def get_db():
     db = getattr(g, '_database', None)
