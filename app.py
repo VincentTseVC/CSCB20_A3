@@ -9,8 +9,9 @@ DATABASE = './assignment3.db'
 a = 5
 b = 8
 d = 5
-
 c = 6
+z = 98888
+
 # open and connect to database, return a db (connection)
 def get_db():
     db = getattr(g, '_database', None)
