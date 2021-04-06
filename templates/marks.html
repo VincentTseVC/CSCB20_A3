@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}
+  Calender Page
+{% endblock %}
+
+{% block content %}
+      
+    <section class="section">
+      <h2>Assignments</h2>
+        <div class="info table-info">
+          <div class="table assignment">
+
+            <div class="heading">
+              {% if admin %}
+              <div class="cell"><p>Student Username</p></div>
+              {% endif %}
+              <div class="cell"><p>Work Name</p></div>
+              <div class="cell"><p>Mark</p></div>
+              
+              {% if not admin %}
+              <div class="cell">Remark Request</div>
+              {% endif %}
+
+            </div>
+
+            {% for mark in marks %}
+            <div class="row">
+              {% if admin %}
+              <div class="cell"><p>{{ mark.username }}</p></div>
+              {% endif %}
+
+
+              <div class="cell">
+                  <p>{{ mark.name }}</p>
+              </div>
+              <div class="cell">
+                  <p>{{ mark.grade }}</p>
+              </div>
+
+              {% if not admin %}
+              <div class="cell">
+
+                <form action="/remark">
+                  <input type="text" value="{{ mark.mark_id }}" style="display: none;" name="mark_id">
+                  <input type="text" name="reason">
+                  <input type="submit">
+                </form>
+              </div>
+              {% endif %}
+
+            </div>
+            {% endfor %}
+
+
+
+          </div>
+        </div>
+    </section>
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="../static/style/style.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="../static/script/index.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul id="menu">
+        <li><a href="/">Welcome {{ username }}</a></li>
+
+        <li><a href="/">Home</a></li>
+        <li><a href="">Course Team</a></li>
+        <li><a href="">
+          <div class="dropdown">
+            Assignments
+            <div class="dropdown-content">
+              <a href="">A1</a>
+              <a href="">A2</a>
+              <a href="">A3</a>
+            </div>
+          </div>
+        </a></li>
+        <li><a href="/calendar">Calendar</a></li>
+        <!-- <li><a href="">Syllabus</a></li>
+        <li><a href="">Feedback</a></li> -->
+        <li><a href="https://piazza.com/signup/utoronto.ca" target="blank_">Piazza</a></li>
+        <li><a href="/logout">Log out</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer class="footer">
+      <div><a href="" target="blank_">Department of Computer Science at UofT.</a></div>
+      <div>Site designed by Vicnent Tse</div>
+    </footer>
+  </div>
+</body>
+</html>

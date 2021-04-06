@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}
+  Calender Page
+{% endblock %}
+
+{% block content %}
+      
+    <section class="section">
+        <h2>Sign up</h2>
+
+        <form action="/signup">
+        
+            <label>Username</label>
+            <input type="text" name="username">
+
+            <br>
+
+            <label>Passaword</label>
+            <input type="password" name="password">
+
+            <br>
+
+            <label>sign up as instructor</label>
+            <input type="checkbox" name="admin">
+            
+            <br>
+
+            <input type="submit" value="Sign up">
+        </form>
+
+        <br>
+        <a href="/login">Log in</a>
+
+        
+
+    </section>
+
+
+{% endblock %}

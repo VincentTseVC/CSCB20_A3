@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+  Log In
+{% endblock %}
+
+
+
+
+{% block content %}
+      
+    <section class="section">
+        <h2>Log In</h2>
+
+        <!-- <form action="/login" method="POST"> -->
+        <form action="/login">
+        
+            <label>Username</label>
+            <input type="text" name="username">
+
+            <br>
+
+            <label>Passaword</label>
+            <input type="password" name="password">
+
+
+            <br>
+
+            <input type="submit" value="log in">
+        </form>
+
+
+        {% if error %}
+        <p style="color: red;">wrong username or password.</p>
+        {% endif %}
+
+
+        <br>
+        <a href="/signup">Sign up</a>
+
+    </section>
+
+
+{% endblock %}

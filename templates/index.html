@@ -1,0 +1,353 @@
+{% extends "base.html" %}
+{% block title %}
+  CSCB63 HOME
+{% endblock %}
+
+
+{% block content %}
+
+      <div>
+          <h1 class="title">CSCB63: Design and Analysis of Data Structures</h1>
+      </div>
+
+      <section class="section">
+        <h2>Welcome {{ username }}</h2>
+        <div class="info">
+
+          {% if admin %}
+            <a href="/feedbacks">View all the feedbacks</a>
+            <br>
+            <a href="/remarks">View all the remark requests</a>
+            <br>
+            <a href="/marks">View all the student Marks</a>
+            <br>
+            <a href="/mark">Enter student mark</a>
+
+          {% else %}
+            <a href="/marks">Click here to see your course marks.</a>
+            <br>
+            <a href="/feedback">Click here to write a feedback.</a>
+
+          {% endif %}
+
+
+        </div>
+      </section>
+
+
+      <section class="section">
+        <h2>Course Description</h2>
+        <div class="info">
+          <p>Design, analysis, implementation and comparison of efficient data structures for common abstract data types. Priority queues: heaps and mergeable heaps. Dictionaries: balanced binary search trees, B-trees, hashing. Amortization: data structures for managing dynamic tables and disjoint sets. Data structures for representing graphs. Graph searches.</p>
+          <p><span class="strong">Exclusion</span> CSC263H, CSC265H, (CSCC78H)</p>
+          <p><span class="strong">Prerequisite</span> CSCB36H or (CSCB38H) & [CGPA 2.75 or enrolment in a CSC subject POSt]</p>
+          <p><span class="strong">Syllabus</span> </p>
+        
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Announments</h2>
+
+        <div class="info">
+          <div class="scrollbox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit ipsam? Dolore voluptates nam dolorem quasi, animi laborum! Repudiandae quos provident doloribus eum omnis aut impedit soluta incidunt eos excepturi?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis hic enim nostrum expedita amet excepturi, dolorum fuga porro iusto perspiciatis rem culpa at consequatur vitae ex. Repudiandae repellendus vel eaque.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, voluptatibus animi. Voluptas ex, explicabo rerum alias sunt similique sequi in a repellat fugit sint quae corrupti. Placeat quo consectetur soluta.
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <h2>Recommended Readings</h2>
+        <div class="info">
+          <p>Web Programming Step by Step, by Marty Steep, Jessica Miller and Victoria Kirst.</p>
+          <p>Standard documents from: <a href="http://www.w3.org" target="blank_">http://www.w3.org</a>, and <a href="http://nodejs.org/api/" target="blank_">http://nodejs.org/api/</a></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Course Team</h2>
+        <div class="info table-info">
+          <div class="table team">
+            <div class="heading">
+              <div class="cell"><p></p></div>
+              <div class="cell"><p>Name</p></div>
+              <div class="cell"><p>Email</p></div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                  <p>Instructor</p>
+              </div>
+              <div class="cell">
+                  <p>VIncent Tse</p>
+              </div>
+              <div class="cell">
+                  <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="cell">
+                  <p>Instructor</p>
+              </div>
+              <div class="cell">
+                  <p>VIncent Tse</p>
+              </div>
+              <div class="cell">
+                  <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+          <h2>Assignments</h2>
+          <div class="info table-info">
+            <div class="table assignment">
+              <div class="heading">
+                <div class="cell"><p></p></div>
+                <div class="cell"><p>Name</p></div>
+                <div class="cell"><p>Email</p></div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                    <p><a href="Assignments\a1.pdf">Assignment 1</a></p>
+                </div>
+                <div class="cell">
+                    <p>VIncent Tse</p>
+                </div>
+                <div class="cell">
+                    <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="cell">
+                    <p><a href="Assignments\a2.pdf">Assignment 2</a></p>
+                </div>
+                <div class="cell">
+                    <p>VIncent Tse</p>
+                </div>
+                <div class="cell">
+                    <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="section">
+          <h2>Assignments</h2>
+          <div class="info table-info">
+
+
+            <div class="table assignment">
+              <div class="heading">
+                <div class="cell"><p></p></div>
+                <div class="cell"><p>Name</p></div>
+                <div class="cell"><p>Email</p></div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                    <p><a href="Assignments\a1.pdf">Assignment 1</a></p>
+                </div>
+                <div class="cell">
+                    <p>VIncent Tse</p>
+                </div>
+                <div class="cell">
+                    <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="cell">
+                    <p><a href="Assignments\a2.pdf">Assignment 2</a></p>
+                </div>
+                <div class="cell">
+                    <p>VIncent Tse</p>
+                </div>
+                <div class="cell">
+                    <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section class="section">
+        <h2>Calendar</h2>
+        <div class="info">
+          <!-- Tab links -->
+          <div class="tab">
+            <button onclick="openTabContent(event, 'Lectures')" class="tablinks active">Lectures</button>
+            <button onclick="openTabContent(event, 'Assignments')" class="tablinks">Assginments</button>
+            <button onclick="openTabContent(event, 'Labs')" class="tablinks">Labs</button>
+            <button onclick="openTabContent(event, 'Tests')" class="tablinks">Tests</button>
+          </div>
+
+          <!-- Tab contents -->
+          <div id="Lectures" class="tabcontent active">
+            <div class="table assignment">
+              <div class="heading">
+                <div class="cell"><p></p></div>
+                <div class="cell"><p>Name</p></div>
+                <div class="cell"><p>Email</p></div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                    <p><a href="Assignments\a1.pdf">Lecture 01</a></p>
+                </div>
+                <div class="cell">
+                    <p>VIncent Tse</p>
+                </div>
+                <div class="cell">
+                    <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+          <div id="Assignments" class="tabcontent">
+
+              <div class="table assignment">
+                  <div class="heading">
+                    <div class="cell"><p></p></div>
+                    <div class="cell"><p>Name</p></div>
+                    <div class="cell"><p>Email</p></div>
+                  </div>
+                  <div class="row">
+                    <div class="cell">
+                        <p><a href="Assignments\a1.pdf">Assignment 1</a></p>
+                    </div>
+                    <div class="cell">
+                        <p>VIncent Tse</p>
+                    </div>
+                    <div class="cell">
+                        <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                    </div>
+                  </div>
+      
+                  <div class="row">
+                    <div class="cell">
+                        <p><a href="Assignments\a2.pdf">Assignment 2</a></p>
+                    </div>
+                    <div class="cell">
+                        <p>VIncent Tse</p>
+                    </div>
+                    <div class="cell">
+                        <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+          </div>
+
+
+          <div id="Labs" class="tabcontent">
+
+              <div class="table assignment">
+                  <div class="heading">
+                    <div class="cell"><p></p></div>
+                    <div class="cell"><p>Name</p></div>
+                    <div class="cell"><p>Email</p></div>
+                  </div>
+                  <div class="row">
+                    <div class="cell">
+                        <p><a href="Assignments\a1.pdf">Assignment 1</a></p>
+                    </div>
+                    <div class="cell">
+                        <p>VIncent Tse</p>
+                    </div>
+                    <div class="cell">
+                        <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                    </div>
+                  </div>
+      
+                  <div class="row">
+                    <div class="cell">
+                        <p><a href="Assignments\a2.pdf">Assignment 2</a></p>
+                    </div>
+                    <div class="cell">
+                        <p>VIncent Tse</p>
+                    </div>
+                    <div class="cell">
+                        <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+          </div>
+
+          <div id="Tests" class="tabcontent">
+
+              <div class="table assignment">
+                  <div class="heading">
+                    <div class="cell"><p></p></div>
+                    <div class="cell"><p>Name</p></div>
+                    <div class="cell"><p>Email</p></div>
+                  </div>
+                  <div class="row">
+                    <div class="cell">
+                        <p><a href="Assignments\a1.pdf">Assignment 1</a></p>
+                    </div>
+                    <div class="cell">
+                        <p>VIncent Tse</p>
+                    </div>
+                    <div class="cell">
+                        <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                    </div>
+                  </div>
+      
+                  <div class="row">
+                    <div class="cell">
+                        <p><a href="Assignments\a2.pdf">Assignment 2</a></p>
+                    </div>
+                    <div class="cell">
+                        <p>VIncent Tse</p>
+                    </div>
+                    <div class="cell">
+                        <p><a href="mailto:mashiyat@cs.toronto.edu">VincentTse@cs.toronto.edu</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+          </div>
+
+
+           
+        </div>
+      </section>
+
+
+
+
+
+      <!-- <span id="Calendar"></span>
+      <section class="section">
+        <h2>Calendar</h2>
+        <div class="info">
+            <iframe src="https://calendar.google.com/calendar/embed?src=e4u6mrj6varpa2kqtst2r1lf5c%40group.calendar.google.com&ctz=America%2FToronto" 
+            width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </section> -->
+
+      <span id="Lecture Recording"></span>
+      <section class="section">
+        <h2>Lecture Recordings</h2>
+        <div class="info">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/o2zvg-ZoaOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+{% endblock %}
