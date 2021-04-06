@@ -8,8 +8,12 @@ DATABASE = './assignment3.db'
 
 a = 5
 b = 8
+<<<<<<< HEAD
 d = 5
 
+=======
+c = 6
+>>>>>>> 849a63252d0e387c263523c397def89f64707ab4
 # open and connect to database, return a db (connection)
 def get_db():
     db = getattr(g, '_database', None)
